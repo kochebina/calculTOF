@@ -1,0 +1,28 @@
+
+/gate/source/addSource                        flash
+
+/gate/source/flash/gps/particle gamma
+/gate/source/flash/setType backtoback
+/gate/source/flash/gps/ene/type  Mono
+/gate/source/flash/gps/ene/mono 511. keV
+
+
+/gate/source/flash/setActivity                 50. becquerel
+/gate/source/flash/gps/pos/centre 0. 0. 0. cm
+#/gate/source/flash/visualize 10000 red 10
+
+#/gate/source/flash/gps/ang/type iso
+
+# The parameters (0 180) mean that the source emits
+# at all angles along the z axis
+/gate/source/flash/gps/ang/mintheta 90. deg # 90 - arctan(Zlength/translationX)/2 90
+/gate/source/flash/gps/ang/maxtheta 90. deg  	#90
+
+# The parameters (0 360) mean that the source emits
+# at all angles in the transverse (XY) directions
+/gate/source/flash/gps/ang/minphi 180. deg #180 - arctan((Ylength/2)/TranslationX) # 180
+/gate/source/flash/gps/ang/maxphi 180. deg #180
+
+/gate/source/flash/gps/direction 1 0 0 #1 0 0 
+
+/gate/source/list

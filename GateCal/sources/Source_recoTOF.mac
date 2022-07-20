@@ -1,0 +1,71 @@
+
+/gate/source/addSource                        mySource
+
+/gate/source/mySource/gps/particle gamma
+/gate/source/mySource/setType backtoback
+/gate/source/mySource/gps/ene/type  Mono
+/gate/source/mySource/gps/ene/mono 511. keV
+/gate/source/mySource/setActivity                 10000000. becquerel
+
+#/gate/source/mySource/verbose 3
+
+/gate/source/mySource/gps/ang/type     iso
+/gate/source/mySource/gps/ang/mintheta 0. deg #perpendiculaire à z
+/gate/source/mySource/gps/ang/maxtheta 180. deg
+/gate/source/mySource/gps/ang/minphi 0. deg
+/gate/source/mySource/gps/ang/maxphi 360. deg
+
+/gate/source/mySource/gps/pos/centre                 16. 0. 0. mm
+
+/gate/source/mySource/gps/type Volume
+/gate/source/mySource/gps/shape Sphere
+/gate/source/mySource/gps/radius 10. mm
+
+
+
+
+
+/gate/source/addSource                        mySource2
+
+/gate/source/mySource2/gps/particle gamma
+/gate/source/mySource2/setType backtoback
+/gate/source/mySource2/gps/ene/type  Mono
+/gate/source/mySource2/gps/ene/mono 511. keV
+/gate/source/mySource2/setActivity                 1000000. becquerel
+
+#/gate/source/mySource2/verbose 3
+
+/gate/source/mySource2/gps/ang/type     iso
+/gate/source/mySource2/gps/ang/mintheta 0. deg #perpendiculaire à z
+/gate/source/mySource2/gps/ang/maxtheta 180. deg #note : entre 90 et 120 pour (presque) uniquement sur le detecteur
+/gate/source/mySource2/gps/ang/minphi 0. deg
+/gate/source/mySource2/gps/ang/maxphi 360. deg
+
+/gate/source/mySource2/gps/pos/centre                 -16. 0. 0. mm
+
+/gate/source/mySource2/gps/type Volume
+/gate/source/mySource2/gps/shape Sphere
+/gate/source/mySource2/gps/radius 10. mm
+
+/gate/source/mySource/visualize                   10000 red 10
+
+
+
+/gate/source/addSource                        backgroundSource
+/gate/source/mySource2/gps/particle gamma
+/gate/source/mySource2/setType backtoback
+/gate/source/mySource2/gps/ene/type  Mono
+/gate/source/mySource2/gps/ene/mono 511. keV
+/gate/source/mySource2/setActivity                 10000. becquerel
+
+/gate/source/mySource2/gps/ang/type     iso
+/gate/source/mySource2/gps/ang/mintheta 0. deg #perpendiculaire à z
+/gate/source/mySource2/gps/ang/maxtheta 180. deg #note : entre 90 et 120 pour (presque) uniquement sur le detecteur
+/gate/source/mySource2/gps/ang/minphi 0. deg
+/gate/source/mySource2/gps/ang/maxphi 360. deg
+
+/gate/source/mySource2/gps/pos/centre                 0. 0. 0. mm
+
+/gate/source/mySource2/gps/type Volume
+/gate/source/mySource2/gps/shape Sphere
+/gate/source/mySource2/gps/radius 26. mm

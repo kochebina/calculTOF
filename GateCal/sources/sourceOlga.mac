@@ -1,0 +1,17 @@
+/gate/source/addSource                        mySource
+
+/gate/source/mySource/gps/particle gamma
+/gate/source/mySource/setType backtoback
+/gate/source/mySource/gps/ene/type  Mono
+/gate/source/mySource/gps/ene/mono 511. keV
+
+
+/gate/source/mySource/setActivity                 5000000. becquerel
+/gate/source/mySource/gps/type Volume
+/gate/source/mySource/gps/angtype iso
+/gate/source/mySource/gps/shape Cylinder
+/gate/source/mySource/gps/radius 10. mm
+/gate/source/mySource/gps/halfz 10. mm
+
+
+/gate/source/mySource/gps/pos/centre                  0. 0. 0. mm

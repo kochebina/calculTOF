@@ -1,0 +1,25 @@
+
+/gate/source/addSource                        mySource
+
+/gate/source/mySource/gps/particle gamma
+/gate/source/mySource/setType backtoback
+/gate/source/mySource/gps/ene/type  Mono
+/gate/source/mySource/gps/ene/mono 511. keV
+/gate/source/mySource/setActivity                 500000. becquerel
+/gate/source/mySource/gps/pos/type Volume
+/gate/source/mySource/gps/pos/shape Cylinder
+/gate/source/mySource/gps/pos/radius 0.000000001 nm
+/gate/source/mySource/gps/pos/halfz 135 mm
+#/gate/source/mySource/gps/pos/half 135 mm
+#/gate/source/mySource/gps/pos/sigma_r 0 mm
+
+#/gate/source/mySource/verbose 3
+
+/gate/source/mySource/gps/ang/type     iso
+/gate/source/mySource/gps/ang/mintheta 0. deg #perpendiculaire à z
+/gate/source/mySource/gps/ang/maxtheta 180. deg
+/gate/source/mySource/gps/ang/minphi 0. deg
+/gate/source/mySource/gps/ang/maxphi 360. deg
+
+/gate/source/mySource/gps/pos/centre                  0. 0. 0. mm
+#/gate/source/mySource/visualize                   100 red 10
