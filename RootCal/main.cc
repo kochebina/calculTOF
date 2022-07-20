@@ -22,27 +22,27 @@ int main(int argc, char** argv)
 {
 
 //some filenames
-TString fileG4_s = "../../G4Cal/root/outputs/G4DebugTime0.root";//simple
-TString fileG4_i = "../../G4Cal/root/outputs/G4DebugTimeTOF.root"; //intermediaire
-TString fileG4_ib = "../../G4Cal/root/outputs/G4DebugTimeTOF_blocks_droits.root"; //intermediaire avec deux blocks de cristaux
-TString fileG4_ib50 = "../../G4Cal/root/outputs/G4DebugTimeTOF_blocks_droits50.root"; //intermediaire avec deux blocks, grand nombre de cristaux
-TString fileG4_ibd50Twta = "../../G4Cal/root/outputs/G4DebugTimeTOF_bd50_Twta.root"; //intermediaire avec deux blocks (bon sens), grand nombre de cristaux, TimeMin si edepMax
-TString fileG4_ibd50iso = "../../G4Cal/root/outputs/G4DebugTimeTOF_bd50_iso.root"; //intermediaire avec deux blocks (bon sens), grand nombre de cristaux, source iso
-TString fileG4_c = "../../G4Cal/root/outputs/G4ScanGERef.root";//complete
+TString fileG4_s = "../../../calculTOF_outputs/G4Outputs/G4DebugTime0.root";//simple
+TString fileG4_i = "../../../calculTOF_outputs/G4Outputs/G4DebugTimeTOF.root"; //intermediaire
+TString fileG4_ib = "../../../calculTOF_outputs/G4Outputs/G4DebugTimeTOF_blocks_droits.root"; //intermediaire avec deux blocks de cristaux
+TString fileG4_ib50 = "../../../calculTOF_outputs/G4Outputs/G4DebugTimeTOF_blocks_droits50.root"; //intermediaire avec deux blocks, grand nombre de cristaux
+TString fileG4_ibd50Twta = "../../../calculTOF_outputs/G4Outputs/G4DebugTimeTOF_bd50_Twta.root"; //intermediaire avec deux blocks (bon sens), grand nombre de cristaux, TimeMin si edepMax
+TString fileG4_ibd50iso = "../../../calculTOF_outputs/G4Outputs/G4DebugTimeTOF_bd50_iso.root"; //intermediaire avec deux blocks (bon sens), grand nombre de cristaux, source iso
+TString fileG4_c = "../../../calculTOF_outputs/G4Outputs/G4ScanGERef.root";//complete
 //TString monSingleG4withGate = "../outputs/Single_GateHits.root";
-TString fileGate_s = "../../GateCal/rootOutput/GateCalDebugTime.root";//simple
-TString fileGate_i = "../../GateCal/rootOutput/GateCalDebugTimeTOF.root";//intermediaire
-TString fileGate_ib_nR = "../../GateCal/rootOutput/GateCalDebugTimeTOF_blocks_noReadout.root";//intermediaire avec deux blocks de cristaux
-TString fileGate_ib_oR = "../../GateCal/rootOutput/GateCalDebugTimeTOF_blocks_onlyReadout.root";//intermediaire avec deux blocks de cristaux
-TString fileGate_ib = "../../GateCal/rootOutput/GateCalDebugTimeTOF_blocks_droits.root";//intermediaire avec deux blocks de cristaux
-TString fileGate_ib50 = "../../GateCal/rootOutput/GateCalDebugTimeTOF_blocks_droits50.root";//intermediaire avec deux blocks, grand nombre de cristaux
-TString fileGate_ibd50iso = "../../GateCal/rootOutput/GateCalDebugTimeTOF_bd50iso.root";//intermediaire avec deux blocks (bon sens), grand nombre de cristaux, source iso
-TString fileGate_c = "../../GateCal/rootOutput/GateCalRef.root";//complete
+TString fileGate_s = "../../../calculTOF_outputs/GateOutputs/GateCalDebugTime.root";//simple
+TString fileGate_i = "../../../calculTOF_outputs/GateOutputs/GateCalDebugTimeTOF.root";//intermediaire
+TString fileGate_ib_nR = "../../../calculTOF_outputs/GateOutputs/GateCalDebugTimeTOF_blocks_noReadout.root";//intermediaire avec deux blocks de cristaux
+TString fileGate_ib_oR = "../../../calculTOF_outputs/GateOutputs/GateCalDebugTimeTOF_blocks_onlyReadout.root";//intermediaire avec deux blocks de cristaux
+TString fileGate_ib = "../../../calculTOF_outputs/GateOutputs/GateCalDebugTimeTOF_blocks_droits.root";//intermediaire avec deux blocks de cristaux
+TString fileGate_ib50 = "../../../calculTOF_outputs/GateOutputs/GateCalDebugTimeTOF_blocks_droits50.root";//intermediaire avec deux blocks, grand nombre de cristaux
+TString fileGate_ibd50iso = "../../../calculTOF_outputs/GateOutputs/GateCalDebugTimeTOF_bd50iso.root";//intermediaire avec deux blocks (bon sens), grand nombre de cristaux, source iso
+TString fileGate_c = "../../../calculTOF_outputs/GateOutputs/GateCalRef.root";//complete
 
-TString filenameSingle_c = "../outputs/G4SingleTest_c.root";
-TString filenameCoincidences_c = "../outputs/G4CoincidencesTest_c.root";
-TString filenameSingle_Twta = "../outputs/G4SingleTest_Twta.root";
-TString filenameCoincidences_Twta = "../outputs/G4CoincidencesTest_Twta.root";
+TString filenameSingle_c = "../../../calculTOF_outputs/RootOutputs/G4SingleTest_c.root";
+TString filenameCoincidences_c = "../../../calculTOF_outputs/RootOutputs/G4CoincidencesTest_c.root";
+TString filenameSingle_Twta = "../../../calculTOF_outputs/RootOutputs/G4SingleTest_Twta.root";
+TString filenameCoincidences_Twta = "../../../calculTOF_outputs/RootOutputs/G4CoincidencesTest_Twta.root";
 
 TString currentG4File = fileG4_c;
 TString currentGateFile = fileGate_ib50;

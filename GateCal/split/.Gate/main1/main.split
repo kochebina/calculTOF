@@ -1,0 +1,115 @@
+Number of files: 16
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test1
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0 s
+Virtual stopTime: 0.0625 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test2
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.0625 s
+Virtual stopTime: 0.125 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test3
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.125 s
+Virtual stopTime: 0.1875 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test4
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.1875 s
+Virtual stopTime: 0.25 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test5
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.25 s
+Virtual stopTime: 0.3125 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test6
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.3125 s
+Virtual stopTime: 0.375 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test7
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.375 s
+Virtual stopTime: 0.4375 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test8
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.4375 s
+Virtual stopTime: 0.5 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test9
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.5 s
+Virtual stopTime: 0.5625 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test10
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.5625 s
+Virtual stopTime: 0.625 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test11
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.625 s
+Virtual stopTime: 0.6875 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test12
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.6875 s
+Virtual stopTime: 0.75 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test13
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.75 s
+Virtual stopTime: 0.8125 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test14
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.8125 s
+Virtual stopTime: 0.875 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test15
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.875 s
+Virtual stopTime: 0.9375 s
+
+Root filename: ../../calculTOF_outputs/GateOutputs/test16
+Timeslice is: 1 s
+Start time is: 0. s
+Stop time is: 1 s
+Virtual startTime: 0.9375 s
+Virtual stopTime: 1 s
+
+Original Root filename: ../../calculTOF_outputs/GateOutputs/test

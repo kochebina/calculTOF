@@ -53,7 +53,7 @@
 
 # Output
 /gate/output/root/enable
-/gate/output/root/setFileName             rootOutput/test
+/gate/output/root/setFileName             ../../calculTOF_outputs/GateOutputs/test
 /gate/output/root/setRootHitFlag          1
 /gate/output/root/setRootSinglesFlag      1
 /gate/output/root/setRootCoincidencesFlag 1
@@ -62,7 +62,7 @@
 # Random generator
 /gate/random/setEngineName                MersenneTwister
 /gate/random/setEngineSeed                auto #123456789
-#/gate/random/verbose                      2
+#/gate/random/verbose                     2
 
 # Acquisition
 /gate/application/setTimeSlice            1 s

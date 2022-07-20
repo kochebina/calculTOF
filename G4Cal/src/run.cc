@@ -163,7 +163,7 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 	strCristalWidth << e;
 	//man->OpenFile("../root/output" + strRunID.str() +"_e_"+ strCristalWidth.str() + ".root");
 
-	man->OpenFile("../root/outputs/test" + strRunID.str() + ".root");
+	man->OpenFile("../../../calculTOF_outputs/G4Outputs/test" + strRunID.str() + ".root");
 
 	G4cout<< "BeginOfRunAction" << G4endl;
 

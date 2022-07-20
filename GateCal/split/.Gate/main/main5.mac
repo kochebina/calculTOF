@@ -1,0 +1,128 @@
+/vis/disable
+/gate/geometry/setMaterialDatabase GateMaterials.db
+/gate/world/geometry/setXLength 1000. mm
+/gate/world/geometry/setYLength 1000. mm
+/gate/world/geometry/setZLength 1000. mm
+/gate/world/vis/setVisible 1
+/gate/world/setMaterial Air
+
+/gate/world/daughters/name cylindricalPET
+/gate/world/daughters/insert cylinder
+/gate/cylindricalPET/geometry/setRmax 350. mm
+/gate/cylindricalPET/geometry/setRmin 290. mm
+/gate/cylindricalPET/geometry/setHeight 270. mm
+/gate/cylindricalPET/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/cylindricalPET/setMaterial Air
+/gate/cylindricalPET/daughters/name module
+/gate/cylindricalPET/daughters/insert box
+/gate/module/geometry/setXLength 64.5 mm
+/gate/module/geometry/setYLength 25. mm
+/gate/module/geometry/setZLength 250.4 mm
+/gate/module/placement/setTranslation 0. 324.3 0. mm
+/gate/module/setMaterial Air
+/gate/module/vis/forceWireframe
+/gate/module/vis/setColor white
+/gate/module/daughters/name unit
+/gate/module/daughters/insert box
+/gate/unit/geometry/setXLength 64.5 mm
+/gate/unit/geometry/setYLength 25. mm
+/gate/unit/geometry/setZLength 47.84 mm
+/gate/unit/placement/setTranslation 0. 0. 0. mm
+/gate/unit/setMaterial Air
+/gate/unit/vis/forceWireframe
+/gate/unit/vis/setColor blue
+/gate/unit/daughters/name block
+/gate/unit/daughters/insert box
+/gate/block/geometry/setXLength 15.9 mm
+/gate/block/geometry/setYLength 25. mm
+/gate/block/geometry/setZLength 47.84 mm
+/gate/block/placement/setTranslation 0. 0. 0. mm
+/gate/block/setMaterial Air
+/gate/block/vis/forceWireframe
+/gate/block/vis/setColor red
+/gate/block/daughters/name optical
+/gate/block/daughters/insert box
+/gate/optical/geometry/setXLength 15.9 mm
+/gate/optical/geometry/setYLength 25. mm
+/gate/optical/geometry/setZLength 15.9 mm
+/gate/optical/placement/setTranslation 0. 0. 0. mm
+/gate/optical/setMaterial Air
+/gate/optical/vis/forceWireframe
+/gate/optical/vis/setColor yellow
+/gate/optical/vis/setVisible 1
+/gate/optical/daughters/name crystal
+/gate/optical/daughters/insert box
+/gate/crystal/geometry/setXLength 3.95 mm
+/gate/crystal/geometry/setYLength 25. mm
+/gate/crystal/geometry/setZLength 5.3 mm
+/gate/crystal/placement/setTranslation 0. 0. 0. mm
+/gate/crystal/setMaterial LYSO-GE
+/gate/crystal/vis/forceWireframe
+/gate/crystal/vis/setColor green
+/gate/crystal/vis/setVisible 1
+/gate/crystal/repeaters/insert cubicArray
+/gate/crystal/cubicArray/setRepeatNumberX 4
+/gate/crystal/cubicArray/setRepeatNumberY 1
+/gate/crystal/cubicArray/setRepeatNumberZ 3
+/gate/crystal/cubicArray/setRepeatVector 3.9833 0. 5.3 mm
+/gate/optical/repeaters/insert linear
+/gate/optical/linear/setRepeatNumber 3
+/gate/optical/linear/setRepeatVector 0. 0. 15.97 mm
+/gate/block/repeaters/insert linear
+/gate/block/linear/setRepeatNumber 4
+/gate/block/linear/setRepeatVector 16.20 0. 0. mm
+/gate/unit/repeaters/insert linear
+/gate/unit/linear/setRepeatNumber 5
+/gate/unit/linear/setRepeatVector 0. 0. 50.64 mm
+/gate/module/repeaters/insert ring
+/gate/module/ring/setRepeatNumber 28
+/gate/systems/cylindricalPET/rsector/attach module
+/gate/systems/cylindricalPET/module/attach unit
+/gate/systems/cylindricalPET/submodule/attach block
+/gate/systems/cylindricalPET/crystal/attach optical
+/gate/systems/cylindricalPET/layer0/attach crystal
+/gate/crystal/attachCrystalSD
+/gate/systems/cylindricalPET/describe
+
+/gate/physics/addPhysicsList emstandard_opt3
+/gate/physics/processList Enabled
+/gate/physics/processList Initialized
+/gate/physics/Gamma/SetCutInRegion world 1 mm
+/gate/physics/Electron/SetCutInRegion world 1 mm
+/gate/physics/displayCuts
+
+/gate/run/initialize
+/gate/digitizer/Singles/insert adder
+/gate/digitizer/Singles/adder/positionPolicy energyWeightedCentroid
+/gate/digitizer/Singles/insert readout
+/gate/digitizer/Singles/readout/setPolicy TakeEnergyWinner
+/gate/digitizer/Singles/readout/setDepth 1
+/gate/digitizer/Coincidences/setWindow 4.57 ns
+
+/gate/source/addSource mySource
+/gate/source/mySource/gps/particle gamma
+/gate/source/mySource/setType backtoback
+/gate/source/mySource/gps/ene/type Mono
+/gate/source/mySource/gps/ene/mono 511. keV
+/gate/source/mySource/setActivity 5000000. becquerel
+/gate/source/mySource/gps/type Volume
+/gate/source/mySource/gps/angtype iso
+/gate/source/mySource/gps/shape Cylinder
+/gate/source/mySource/gps/radius 10. mm
+/gate/source/mySource/gps/halfz 10. mm
+/gate/source/mySource/gps/pos/centre 0. 0. 0. mm
+
+
+/gate/output/root/setFileName ../../../calculTOF_outputs/GateOutputs/test5
+/gate/output/root/setRootHitFlag 1
+/gate/output/root/setRootSinglesFlag 1
+/gate/output/root/setRootCoincidencesFlag 1
+/gate/random/setEngineName MersenneTwister
+
+/gate/application/setTimeSlice 1 s
+/gate/application/setTimeStart 0. s
+/gate/application/setTimeStop 1 s
+/gate/random/setEngineSeed 1065620993021766030
+/gate/output/root/enable
+/gate/application/startDAQCluster 0.25 0.3125 0 s
+

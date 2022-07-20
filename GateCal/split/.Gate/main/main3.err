@@ -1,0 +1,14 @@
+SysError in <TFile::TFile>: file /biomaps/physique/apaillet/calculTOF/GateCal/../../../calculTOF_outputs/GateOutputs/test3.root can not be opened No such file or directory
+[G4-cerr] 
+-------- EEEE ------- G4Exception-START -------- EEEE -------
+*** G4Exception : RecordBeginOfAcquisition
+      issued by : GateToRoot::RecordBeginOfAcquisition
+Could not open the requested output ROOT file '../../../calculTOF_outputs/GateOutputs/test3.root'!
+*** Fatal Exception *** core dump ***
+[G4-cerr]  **** Track information is not available at this moment
+[G4-cerr]  **** Step information is not available at this moment
+[G4-cerr] 
+-------- EEEE -------- G4Exception-END --------- EEEE -------
+
+[G4-cerr] 
+[G4-cerr] *** G4Exception: Aborting execution ***

@@ -1,0 +1,32 @@
+git clone
+créer un répertoire annexe pour les outputs root (nom_du_git_outputs par exemple)
+	deux possibilités : soit un répertoire par type de simu (un gate, un G4 etc) soit une convention de nommage
+
+cd G4Cal
+mkdir build
+cd build
+ccmake ..
+	modifier le path d'installation comme voulu
+	éditer le fichier src/run.cc et spécifier le répertoire pour les fichiers de sortie ligne 166 
+	(man->OpenFile("../../../nom_du_git_outputs/nom_que_l'on_veut"); 
+	Si le répertoire indiqué est suivi par Git, faire en sorte que les fichiers de plus de 100MB ne soient pas 	suivis (trop lourds)
+make install -j xx
+tests : ./sim puis /run/beamOn 10
+	../bin/sim -m ../macros/run.mac -t xx
+	vérifier les outputs
+
+cd ../../GateCal
+éditer la macro main.mac pour le fichier de sortie
+mkdir split (obligatoire pour condor)
+Lancer une simu et vérifier l'output
+
+cd ../RootCal/
+mkdir build
+ccmake .. 
+	 changer le répertoire d'installation comme voulu
+	 éditer le fichier main.cc et spécifier 
+	 1. les noms des fichiers à traiter
+	 2. les noms des fichiers traités 
+ make install 
+Lancer un traitement pour vérifier 
+
