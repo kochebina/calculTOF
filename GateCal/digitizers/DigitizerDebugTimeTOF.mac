@@ -1,0 +1,24 @@
+################################
+## Modeling truc              ##
+## Adrien Paillet, CEA 2021   ##
+################################
+
+
+# Readout at the block level
+/gate/digitizer/Singles/insert                          adder
+#/gate/digitizer/Singles/adder/positionPolicy           energyWeightedCentroid
+/gate/digitizer/Singles/insert                          readout
+#/gate/digitizer/Singles/readout/setPolicy               TakeEnergyWinner
+/gate/digitizer/Singles/readout/setDepth 1       
+
+
+/gate/digitizer/Coincidences/minSectorDifference 1
+/gate/digitizer/Coincidences/setWindow 4.57 ns
+
+#/gate/digitizer/Coincidences/minSectorDifference 2 #2 valeur par défaut
+#/gate/digitizer/Coincidences/setOffset 0. ns       #0 par défaut
+#/gate/digitizer/Coincidences/setDepth 1            #1 par défaut
+#/gate/digitizer/Coincidences/allPulseOpenCoincGate false  #false par défaut. true n'est pas validé !
+#/gate/digitizer/Coincidences/MultiplesPolicy keepIfAllAreGoods   #keepIfAllAreGoods par défaut
+
+
