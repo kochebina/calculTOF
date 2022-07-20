@@ -1,0 +1,11 @@
+/vis/open OGL
+#/vis/viewer/set/viewpointVector 1 1 1
+/vis/viewer/set/viewpointThetaPhi 45 45
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/trajectories smooth
+/vis/scene/add/scale
+#/vis/scene/add/axes
+/vis/scene/add/eventID
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/zoom 3
