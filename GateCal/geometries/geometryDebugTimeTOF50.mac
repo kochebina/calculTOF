@@ -1,0 +1,53 @@
+
+/gate/world/daughters/name                    ecat
+/gate/world/daughters/insert		       cylinder
+/gate/ecat/placement/setTranslation           0.0 0.0 0.0 cm
+/gate/ecat/geometry/setRmax                   50 cm
+/gate/ecat/geometry/setRmin                   5 cm
+/gate/ecat/geometry/setHeight                 25 cm
+
+/gate/ecat/setMaterial                        Air
+/gate/ecat/vis/forceWireframe
+/gate/ecat/vis/setColor                       red
+
+
+
+/gate/ecat/daughters/name block
+/gate/ecat/daughters/insert box
+/gate/block/placement/setTranslation          10.0 0.0 0.0 cm
+/gate/block/geometry/setYLength               25 mm
+/gate/block/geometry/setXLength               25. mm
+/gate/block/geometry/setZLength               25 mm
+/gate/block/setMaterial Air
+
+
+# Crystal
+/gate/block/daughters/name                      crystal
+/gate/block/daughters/insert                    box
+/gate/crystal/geometry/setZLength               2.5 mm
+/gate/crystal/geometry/setXLength               25. mm
+/gate/crystal/geometry/setYLength               2.5 mm
+/gate/crystal/placement/setTranslation          0. 0. 0. cm
+/gate/crystal/setMaterial                       LYSO-GE
+#/gate/crystal/vis/forceSolid                    
+/gate/crystal/vis/setColor                      green
+/gate/crystal/vis/setVisible                    1
+
+/gate/block/repeaters/insert                  ring
+/gate/block/ring/setRepeatNumber              2
+
+/gate/crystal/repeaters/insert                  cubicArray
+/gate/crystal/cubicArray/setRepeatNumberZ       10
+/gate/crystal/cubicArray/setRepeatNumberX       1
+/gate/crystal/cubicArray/setRepeatNumberY       10
+/gate/crystal/cubicArray/setRepeatVector         0.  2.5 2.5 mm
+
+/gate/systems/ecat/block/attach block
+/gate/systems/ecat/crystal/attach  crystal
+
+# Attach crystal sensitive detector
+/gate/crystal/attachCrystalSD
+
+/gate/systems/ecat/describe
+#-------------------------------------------------------------------------------#
+

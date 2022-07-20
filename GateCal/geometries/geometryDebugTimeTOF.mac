@@ -1,0 +1,50 @@
+
+/gate/world/daughters/name                    ecat
+/gate/world/daughters/insert		       cylinder
+/gate/ecat/placement/setTranslation           0.0 0.0 0.0 cm
+/gate/ecat/geometry/setRmax                   50 cm
+/gate/ecat/geometry/setRmin                   5 cm
+/gate/ecat/geometry/setHeight                 25 cm
+
+/gate/ecat/setMaterial                        Air
+/gate/ecat/vis/forceWireframe
+/gate/ecat/vis/setColor                       red
+
+
+
+/gate/ecat/daughters/name block
+/gate/ecat/daughters/insert box
+/gate/block/placement/setTranslation 10.0 0.0 0.0 cm
+/gate/block/geometry/setXLength 6.0 cm
+/gate/block/geometry/setYLength 2.0 cm
+/gate/block/geometry/setZLength 2.0 cm
+/gate/block/setMaterial Air
+
+
+# Crystal
+/gate/block/daughters/name                      crystal
+/gate/block/daughters/insert                    box
+/gate/crystal/geometry/setXLength               3 cm
+/gate/crystal/geometry/setYLength               1 cm
+/gate/crystal/geometry/setZLength               1 cm
+/gate/crystal/placement/setTranslation          0. 0. 0. cm
+/gate/crystal/setMaterial                       LSO
+#/gate/crystal/vis/forceSolid                    
+/gate/crystal/vis/setColor                      green
+/gate/crystal/vis/setVisible                    1
+
+/gate/block/repeaters/insert                  ring
+/gate/block/ring/setRepeatNumber              2
+
+/gate/crystal/repeaters/insert             linear
+/gate/crystal/linear/setRepeatNumber      1
+
+/gate/systems/ecat/block/attach block
+/gate/systems/ecat/crystal/attach  crystal
+
+# Attach crystal sensitive detector
+/gate/crystal/attachCrystalSD
+
+/gate/systems/ecat/describe
+#-------------------------------------------------------------------------------#
+
