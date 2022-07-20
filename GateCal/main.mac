@@ -1,0 +1,73 @@
+################################
+## Modeling GE signa PET-MR   ##
+## Maya Khalifé, CEA 2015     ##
+## Adapted by Adrien Paillet  ##
+## CEA 2021                   ##
+################################
+
+# Visualization
+/vis/disable
+#/control/execute visu.mac
+
+# Material database
+/gate/geometry/setMaterialDatabase        GateMaterials.db
+
+# World
+/gate/world/geometry/setXLength           1000. mm
+/gate/world/geometry/setYLength           1000. mm
+/gate/world/geometry/setZLength           1000. mm
+/gate/world/vis/setVisible                1
+/gate/world/setMaterial                   Air
+
+# Scanner
+/control/execute                          geometries/GE_geometry_layer.mac #geometryDebugTimeTOF50.mac
+
+
+# Physics
+/control/execute                          physics.mac
+
+# Initialize geometry and cross sections
+/gate/run/initialize
+
+# Digitizer
+/control/execute                         digitizers/GE_digitizer.mac  #DigitizerDebugTimeTOF.mac
+
+# Source
+/control/execute                         sources/sourceOlga.mac #sourceDebugTime.mac #SourcePonctuelle.mac   # #Source_recoTOF.mac
+
+
+
+#	V E R B O S I T Y
+#/control/verbose			   2
+#/run/verbose                              2
+#/event/verbose                            10
+#/tracking/verbose                         10
+#/particle/verbose			   10
+#/gate/systems/verbose                     6
+#/gate/distributions/verbose               6
+#/gate/timing/verbose			   20
+#/gate/stepping/verbose                    200
+#/gate/generator/verbose	          568
+#/gate/source/verbose 3
+
+
+# Output
+/gate/output/root/enable
+/gate/output/root/setFileName             rootOutput/test
+/gate/output/root/setRootHitFlag          1
+/gate/output/root/setRootSinglesFlag      1
+/gate/output/root/setRootCoincidencesFlag 1
+
+
+# Random generator
+/gate/random/setEngineName                MersenneTwister
+/gate/random/setEngineSeed                auto #123456789
+#/gate/random/verbose                      2
+
+# Acquisition
+/gate/application/setTimeSlice            1 s
+/gate/application/setTimeStart            0. s
+/gate/application/setTimeStop             1 s
+
+#/run/beamOn 50000
+/gate/application/startDAQ
