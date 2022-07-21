@@ -280,3 +280,73 @@ void MyDetectorConstruction::ConstructTOFTestStructure()
 G4cout<< "ConstructTOFTestStructure" << G4endl;
 
 }
+
+void MyDetectorConstruction::GenerateCastorOptionFile(G4float scanner_radius, // radius in mm (from isocenter to crystal surface)
+                           //nb scanner elements
+                           G4int nb_rsectors,
+                           G4int nb_trans_mod,
+                           G4int nb_axial_mod,
+                           G4int nb_trans_submod,
+                           G4int nb_axial_submod,
+                           G4int nb_trans_crystal,
+                           G4int nb_axial_crystal,
+                           // Gaps between scanner elements
+                           G4float gap_trans_mod,
+                           G4float gap_axial_mod,
+                           G4float gap_trans_submod,
+                           G4float gap_axial_submod,
+                           G4float gap_trans_crystal,
+                           G4float gap_axial_crystal,
+                           // crystal dimensions (mm)
+                           G4float crystal_size_depth,
+                           G4float crystal_size_trans,
+                           G4float crystal_size_axial)
+{
+  G4cout<<"!!!!!!!! it  works!!!!! "<<G4endl;
+  G4cout<< "scanner_radius "  << scanner_radius<<G4endl;
+  G4cout<< "nb_rsectors "  << nb_rsectors<<G4endl;
+  G4cout<< "nb_trans_mod " << nb_trans_mod<<G4endl;
+  G4cout<< "nb_axial_mod " << nb_axial_mod<<G4endl;
+  G4cout<< "nb_trans_submod " << nb_trans_submod<<G4endl;
+  G4cout<< "nb_axial_submod " << nb_axial_submod<<G4endl;
+  G4cout<< "nb_trans_crystal " << nb_trans_crystal<<G4endl;
+  G4cout<< "nb_axial_crystal " << nb_axial_crystal<<G4endl;
+  // Gaps between scanner elements
+  G4cout<< "gap_trans_mod " << gap_trans_mod<<G4endl;
+  G4cout<< "gap_axial_mod " << gap_axial_mod<<G4endl;
+  G4cout<< "gap_trans_submod " << gap_trans_submod<<G4endl;
+  G4cout<< "gap_axial_submod " << gap_axial_submod<<G4endl;
+  G4cout<< "gap_trans_crystal " << gap_trans_crystal<<G4endl;
+  G4cout<< "gap_axial_crystal " << gap_axial_crystal<<G4endl;
+  // crystal dimensions (mm)
+  G4cout<< "crystal_size_depth " << crystal_size_depth<<G4endl;
+  G4cout<< "crystal_size_trans " << crystal_size_trans<<G4endl;
+  G4cout<< "crystal_size_axial " << crystal_size_axial<<G4endl;
+
+
+  std::ofstream myfile;
+  myfile.open ("G4toCastorOptFile.txt");
+  myfile << scanner_radius<<'\n';
+  myfile << nb_rsectors<<'\n';
+  myfile << nb_trans_mod<<'\n';
+  myfile << nb_axial_mod<<'\n';
+  myfile << nb_trans_submod<<'\n';
+  myfile << nb_axial_submod<<'\n';
+  myfile << nb_trans_crystal<<'\n';
+  myfile << nb_axial_crystal<<'\n';
+  // Gaps between scanner elements
+  myfile << gap_trans_mod<<'\n';
+  myfile << gap_axial_mod<<'\n';
+  myfile << gap_trans_submod<<'\n';
+  myfile << gap_axial_submod<<'\n';
+  myfile << gap_trans_crystal<<'\n';
+  myfile << gap_axial_crystal<<'\n';
+  // crystal dimensions (mm)
+  myfile << crystal_size_depth<<'\n';
+  myfile << crystal_size_trans<<'\n';
+  myfile << crystal_size_axial<<'\n';
+  myfile.close();
+
+
+
+}

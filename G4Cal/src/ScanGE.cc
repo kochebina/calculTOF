@@ -175,6 +175,66 @@ void ScanGE::Construct(G4LogicalVolume*logicWorld,G4Material* LYSO_GE, G4Materia
 		}
 	}
 
+
+
+
+	///////////////////// For Castor //////////////////////////
+			 // Fill this part if the geometry changes a lot (not only sizes, number of crystals and their positions)
+			 //
+			 // axial = z
+			 // trans = x
+			 // unit = mod
+			 // block = submod
+			 // optical = ...
+			 // crystal = crystal
+			 //
+
+			 G4double scanner_radius=(ty_module-y_module); // radius in mm (from isocenter to crystal surface)
+			 //nb scanner elements
+			 G4int nb_rsectors=ringRepeatNumber;
+			 G4int nb_trans_mod=1;
+			 G4int nb_axial_mod=unitRepeatNumber;
+			 G4int nb_trans_submod=blockRepeatNumber;
+			 G4int nb_axial_submod=opticalRepeatNumber; //1
+			 G4int nb_trans_crystal=crystalRepeatNumberX;
+			 G4int nb_axial_crystal=crystalRepeatNumberZ;//*opticalRepeatNumber;
+			 // Gaps between scanner elements
+			 G4double gap_trans_mod=0;
+			 G4double gap_axial_mod=unitRepeatZ-z_unit*2;
+			 G4double gap_trans_submod=blockRepeatX-x_block*2;
+			 G4double gap_axial_submod=0;
+			 G4double gap_trans_crystal=crystalRepeatX-x_crystal*2;
+			 G4double gap_axial_crystal=crystalRepeatZ-z_crystal*2;
+			 // crystal dimensions (mm)
+			 G4double crystal_size_depth=y_crystal*2;
+			 G4double crystal_size_trans=x_crystal*2;
+			 G4double crystal_size_axial=z_crystal*2;
+
+			 MyDetectorConstruction *constr=new MyDetectorConstruction();
+			 constr->GenerateCastorOptionFile(scanner_radius,
+													//nb scanner elements
+													 nb_rsectors,
+													 nb_trans_mod,
+													 nb_axial_mod,
+													 nb_trans_submod,
+													 nb_axial_submod,
+													 nb_trans_crystal,
+													 nb_axial_crystal,
+													// Gaps between scanner elements
+													 gap_trans_mod,
+													 gap_axial_mod,
+													 gap_trans_submod,
+													 gap_axial_submod,
+													 gap_trans_crystal,
+													 gap_axial_crystal,
+													// crystal dimensions (mm)
+													 crystal_size_depth,
+													 crystal_size_trans,
+													 crystal_size_axial);
+
+			 /////////////////////////////////////////////////////////////////
+
+
 	/*GenerateLUT(G4String modality, G4double scannerRadius, G4int nRings,
 		G4int nElem, G4int nLayer, G4int nCrystByLayer,
 		G4double crystDepth, G4double crystTransaxial, G4double crystAxial,

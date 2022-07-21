@@ -7,4 +7,4 @@
 #random/setEngineSeed                auto
 
 #/run/beamOn 10
-/run/beamOn 5000000 #500000. pendant 1s
+/run/beamOn 5000 #500000. pendant 1s

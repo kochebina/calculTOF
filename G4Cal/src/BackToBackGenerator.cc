@@ -4,6 +4,7 @@
 #include "G4SPSPosDistribution.hh"
 //#include "Random.hh"
 #include "G4RandomDirection.hh"
+#include <math.h>
 BackToBackGenerator::BackToBackGenerator(G4ParticleGun* Source,
   G4SPSAngDistribution* angGen,
   G4SPSRandomGenerator* bias,
@@ -38,7 +39,7 @@ void BackToBackGenerator::Prepare()
 	fSource->SetParticleDefinition(particle);
 
 	//G4cout<< "MyPrimaryGenerator" << G4endl;
-
+/*
 	biasRndm = new G4SPSRandomGenerator();
 
 	posGenerator = new G4SPSPosDistribution();
@@ -52,7 +53,7 @@ void BackToBackGenerator::Prepare()
   angGenerator->SetMinPhi(0 * deg);
   angGenerator->SetMaxPhi(360 * deg);
 	angGenerator->SetAngDistType("iso");
-
+*/
 
 }
 
@@ -60,7 +61,7 @@ void BackToBackGenerator::Prepare()
 void BackToBackGenerator::Shoot(G4Event *anEvent, G4bool straightToX)
 {
 	//adapted from https://gitlab.cern.ch/geant4/geant4/-/blob/master/examples/extended/eventgenerator/particleGun/src/PrimaryGeneratorAction1.cc
-	const G4double r = 10.*mm; //source linéaire
+	const G4double r = 10.0*sqrt(G4UniformRand())*mm; //source linéaire
   const G4double zmax = 10*mm; //0 source ponctuelle  135 source linéaire de 270mm
 
   //vertex 1 uniform on cylinder
@@ -68,12 +69,16 @@ void BackToBackGenerator::Shoot(G4Event *anEvent, G4bool straightToX)
   G4double alpha = CLHEP::twopi*G4UniformRand();  //alpha uniform in (0, 2*pi)
   G4double ux = std::cos(alpha);
   G4double uy = std::sin(alpha);
+
+  //G4double ux = 2*G4UniformRand() - 1;
+  //G4double uy = 2*G4UniformRand() - 1;
+
   G4double z = zmax*(2*G4UniformRand() - 1);  //z uniform in (-zmax, +zmax)
 
   G4ThreeVector pos; //initialisation obligatoire...
   if(straightToX) {pos.set(0,0,0);}
 	else{pos.set(r*ux,r*uy,z);}
-	//
+
   fSource->SetParticlePosition(pos);
 //end adapted from
 

@@ -45,11 +45,11 @@ TString filenameSingle_Twta = "../../../calculTOF_outputs/RootOutputs/G4SingleTe
 TString filenameCoincidences_Twta = "../../../calculTOF_outputs/RootOutputs/G4CoincidencesTest_Twta.root";
 
 TString currentG4File = fileG4_c;
-TString currentGateFile = fileGate_ib50;
-TString currentRootFile = filenameCoincidences_c;
+TString currentGateFile = fileGate_c;
+TString currentRootFile = filenameSingle_c;
 
 //display
-
+/*
 TFile* f = TFile::Open(currentG4File);
 TTree* Hits;
 f->GetObject("Hits", Hits); //nom du NTuple, nom de l'arbre
@@ -68,14 +68,14 @@ TFile* outputFileC= new TFile(filenameCoincidences_c,"recreate");
 coincidences * mesCoincidences = new coincidences();
 mesCoincidences->fillTreeCoincidences(Singles,outputFileC);
 outputFileC->Close();
-
+*/
 TApplication app("app", &argc, argv);
 
-TString champ1 = "dt";
-TString champ2 = champ1;
+TString champ1 = "globalPosX";
+TString champ2 = "globalPosX";
 TString file1 = currentG4File ;
-TString file2 = currentRootFile;
-TString datatype ="Coincidences";
+TString file2 = currentGateFile;
+TString datatype ="Singles";
 Double_t xmin = -200;
 Double_t xmax = 200;
 Int_t nBins = 100;

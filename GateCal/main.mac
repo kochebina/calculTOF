@@ -33,7 +33,7 @@
 /control/execute                         digitizers/GE_digitizer.mac  #DigitizerDebugTimeTOF.mac
 
 # Source
-/control/execute                         sources/sourceOlga.mac #sourceDebugTime.mac #SourcePonctuelle.mac   # #Source_recoTOF.mac
+/control/execute                         sources/SourcePonctuelle.mac #sourceDebugTime.mac #SourcePonctuelle.mac   # #Source_recoTOF.mac
 
 
 

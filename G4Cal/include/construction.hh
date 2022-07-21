@@ -24,11 +24,33 @@ public :
 
 	//G4LogicalVolume *GetScoringVolume() const {return fScoringVolume;}
 	G4LogicalVolume *GetScoringVolume() const {return fScoringVolume;} //utilisé pour les cuts. A adapter en fonction de la géométrie
-	void SetScoringVolume ( G4LogicalVolume * lV)  {fScoringVolume = lV;} 
+	void SetScoringVolume ( G4LogicalVolume * lV)  {fScoringVolume = lV;}
 	//G4LogicalVolume *GetReadoutVolume() const {return lOptical;}
 	G4int GetCristalWidth() const {return e;}
 
 	virtual G4VPhysicalVolume *Construct();
+
+	void GenerateCastorOptionFile(G4float scanner_radius, // radius in mm (from isocenter to cry
+//stal surface)
+													 //nb scanner elements
+													 G4int nb_rsectors,
+													 G4int nb_trans_mod,
+													 G4int nb_axial_mod,
+													 G4int nb_trans_submod,
+													 G4int nb_axial_submod,
+													 G4int nb_trans_crystal,
+													 G4int nb_axial_crystal,
+													 // Gaps between scanner elements
+													 G4float gap_trans_mod,
+													 G4float gap_axial_mod,
+													 G4float gap_trans_submod,
+													 G4float gap_axial_submod,
+													 G4float gap_trans_crystal,
+													 G4float gap_axial_crystal,
+													 // crystal dimensions (mm)
+													 G4float crystal_size_depth,
+													 G4float crystal_size_trans,
+													 G4float crystal_size_axial);
 
 private :
 	G4LogicalVolume *logicDetector;

@@ -5,7 +5,7 @@
 /gate/source/mySource/setType backtoback
 /gate/source/mySource/gps/ene/type  Mono
 /gate/source/mySource/gps/ene/mono 511. keV
-/gate/source/mySource/setActivity                 5. becquerel
+/gate/source/mySource/setActivity                 5000000. becquerel
 
 
 #/gate/source/mySource/verbose 3

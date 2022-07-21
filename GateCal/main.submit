@@ -24,99 +24,99 @@ getenv=True
 #Image_Size     = 28 Meg     
   
 
-Arguments      = ./split/.Gate/main2/main1.mac
-Output         = ./split/.Gate/main2/main1.out
-Error          = ./split/.Gate/main2/main1.err
-Log            = ./split/.Gate/main2/main1.log
+Arguments      = ./split/.Gate/main4/main1.mac
+Output         = ./split/.Gate/main4/main1.out
+Error          = ./split/.Gate/main4/main1.err
+Log            = ./split/.Gate/main4/main1.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main2.mac
-Output         = ./split/.Gate/main2/main2.out
-Error          = ./split/.Gate/main2/main2.err
-Log            = ./split/.Gate/main2/main2.log
+Arguments      = ./split/.Gate/main4/main2.mac
+Output         = ./split/.Gate/main4/main2.out
+Error          = ./split/.Gate/main4/main2.err
+Log            = ./split/.Gate/main4/main2.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main3.mac
-Output         = ./split/.Gate/main2/main3.out
-Error          = ./split/.Gate/main2/main3.err
-Log            = ./split/.Gate/main2/main3.log
+Arguments      = ./split/.Gate/main4/main3.mac
+Output         = ./split/.Gate/main4/main3.out
+Error          = ./split/.Gate/main4/main3.err
+Log            = ./split/.Gate/main4/main3.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main4.mac
-Output         = ./split/.Gate/main2/main4.out
-Error          = ./split/.Gate/main2/main4.err
-Log            = ./split/.Gate/main2/main4.log
+Arguments      = ./split/.Gate/main4/main4.mac
+Output         = ./split/.Gate/main4/main4.out
+Error          = ./split/.Gate/main4/main4.err
+Log            = ./split/.Gate/main4/main4.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main5.mac
-Output         = ./split/.Gate/main2/main5.out
-Error          = ./split/.Gate/main2/main5.err
-Log            = ./split/.Gate/main2/main5.log
+Arguments      = ./split/.Gate/main4/main5.mac
+Output         = ./split/.Gate/main4/main5.out
+Error          = ./split/.Gate/main4/main5.err
+Log            = ./split/.Gate/main4/main5.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main6.mac
-Output         = ./split/.Gate/main2/main6.out
-Error          = ./split/.Gate/main2/main6.err
-Log            = ./split/.Gate/main2/main6.log
+Arguments      = ./split/.Gate/main4/main6.mac
+Output         = ./split/.Gate/main4/main6.out
+Error          = ./split/.Gate/main4/main6.err
+Log            = ./split/.Gate/main4/main6.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main7.mac
-Output         = ./split/.Gate/main2/main7.out
-Error          = ./split/.Gate/main2/main7.err
-Log            = ./split/.Gate/main2/main7.log
+Arguments      = ./split/.Gate/main4/main7.mac
+Output         = ./split/.Gate/main4/main7.out
+Error          = ./split/.Gate/main4/main7.err
+Log            = ./split/.Gate/main4/main7.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main8.mac
-Output         = ./split/.Gate/main2/main8.out
-Error          = ./split/.Gate/main2/main8.err
-Log            = ./split/.Gate/main2/main8.log
+Arguments      = ./split/.Gate/main4/main8.mac
+Output         = ./split/.Gate/main4/main8.out
+Error          = ./split/.Gate/main4/main8.err
+Log            = ./split/.Gate/main4/main8.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main9.mac
-Output         = ./split/.Gate/main2/main9.out
-Error          = ./split/.Gate/main2/main9.err
-Log            = ./split/.Gate/main2/main9.log
+Arguments      = ./split/.Gate/main4/main9.mac
+Output         = ./split/.Gate/main4/main9.out
+Error          = ./split/.Gate/main4/main9.err
+Log            = ./split/.Gate/main4/main9.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main10.mac
-Output         = ./split/.Gate/main2/main10.out
-Error          = ./split/.Gate/main2/main10.err
-Log            = ./split/.Gate/main2/main10.log
+Arguments      = ./split/.Gate/main4/main10.mac
+Output         = ./split/.Gate/main4/main10.out
+Error          = ./split/.Gate/main4/main10.err
+Log            = ./split/.Gate/main4/main10.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main11.mac
-Output         = ./split/.Gate/main2/main11.out
-Error          = ./split/.Gate/main2/main11.err
-Log            = ./split/.Gate/main2/main11.log
+Arguments      = ./split/.Gate/main4/main11.mac
+Output         = ./split/.Gate/main4/main11.out
+Error          = ./split/.Gate/main4/main11.err
+Log            = ./split/.Gate/main4/main11.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main12.mac
-Output         = ./split/.Gate/main2/main12.out
-Error          = ./split/.Gate/main2/main12.err
-Log            = ./split/.Gate/main2/main12.log
+Arguments      = ./split/.Gate/main4/main12.mac
+Output         = ./split/.Gate/main4/main12.out
+Error          = ./split/.Gate/main4/main12.err
+Log            = ./split/.Gate/main4/main12.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main13.mac
-Output         = ./split/.Gate/main2/main13.out
-Error          = ./split/.Gate/main2/main13.err
-Log            = ./split/.Gate/main2/main13.log
+Arguments      = ./split/.Gate/main4/main13.mac
+Output         = ./split/.Gate/main4/main13.out
+Error          = ./split/.Gate/main4/main13.err
+Log            = ./split/.Gate/main4/main13.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main14.mac
-Output         = ./split/.Gate/main2/main14.out
-Error          = ./split/.Gate/main2/main14.err
-Log            = ./split/.Gate/main2/main14.log
+Arguments      = ./split/.Gate/main4/main14.mac
+Output         = ./split/.Gate/main4/main14.out
+Error          = ./split/.Gate/main4/main14.err
+Log            = ./split/.Gate/main4/main14.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main15.mac
-Output         = ./split/.Gate/main2/main15.out
-Error          = ./split/.Gate/main2/main15.err
-Log            = ./split/.Gate/main2/main15.log
+Arguments      = ./split/.Gate/main4/main15.mac
+Output         = ./split/.Gate/main4/main15.out
+Error          = ./split/.Gate/main4/main15.err
+Log            = ./split/.Gate/main4/main15.log
 Queue
 
-Arguments      = ./split/.Gate/main2/main16.mac
-Output         = ./split/.Gate/main2/main16.out
-Error          = ./split/.Gate/main2/main16.err
-Log            = ./split/.Gate/main2/main16.log
+Arguments      = ./split/.Gate/main4/main16.mac
+Output         = ./split/.Gate/main4/main16.out
+Error          = ./split/.Gate/main4/main16.err
+Log            = ./split/.Gate/main4/main16.log
 Queue
 

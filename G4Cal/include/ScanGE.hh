@@ -11,6 +11,10 @@ public :
 	~ScanGE();
 
 	virtual void Construct(G4LogicalVolume*logicWorld,G4Material* LYSO_GE, G4Material* worldMat);
+
+
+
+/*
 	void GenerateHeaderLUT(G4String modality, G4double scannerRadius, G4int nRings,
 		G4int nElem, G4int nLayer, G4int nCrystByLayer,
 		G4double crystDepth, G4double crystTransaxial, G4double crystAxial,
@@ -18,6 +22,7 @@ public :
 G4double fovTransaxial, G4double fovAxial,
 G4double meanDOI, G4double minAngDiff,
 G4String description );
+*/
 /*
 modality: PET
 scanner radius: 437.6
@@ -36,7 +41,7 @@ mean depth of interaction: -1
 min angle difference: 90
 description: 1 ring PET system
 */
-void GenerateBinaryLUT();
+//void GenerateBinaryLUT();
 /*
 for(iLayer=0;iLayer <NLayer;iLayer++)
 	for(iRing=0;iRing <NRing[iLayer];iLayer++)
