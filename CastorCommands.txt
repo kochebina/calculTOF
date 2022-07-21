@@ -1,0 +1,13 @@
+
+A ajouter dans le code de G4 :
+1) nouvelle méthode dans "construction":
+void GenerateCastorOptionFile(...)
+2) à appeler GenerateCastorOptionFile(...) dans Construct(...) de ScanGE.cc
+--> va produire un fisher G4toCastorOptFile.txt à utiliser en option dans les codes castor
+
+Pour creer un LUT:
+castor-G4PetScannerLut -alias GE_G4 -optf G4toCastorOptFile.txt
+ pour convertir fichier root dans le format de castor:
+castor-G4datafileConversion -il test0.root -o test -s GE_G4 -optf G4toCastorOptFile.txt
+ pour reconstrure (castor standard):
+castor-recon -df test_df.Cdh -fout img_test -it 4:28 -dim 256,256,89 -fov 300,300,247.42 -opti MLEM 

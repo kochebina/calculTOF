@@ -1,0 +1,17 @@
+==================================================================================================
+                                      COMMAND LINE CONTEXT
+==================================================================================================
+Command line: castor-G4datafileConversion -il ../../../calculTOF_outputs/G4Outputs/test0.root -o test -s GE_G4 -optf G4toCastorOptFile.txt 
+Working directory: /biomaps/physique/apaillet/calculTOF/G4Cal/build
+Data of execution: Thu Jul 21 14:38:45 2022
+Float numbers precision in bytes (for matrices and some computations): 4
+Float numbers precision in bytes (for sensitive computations that require at least double precision): 8
+Float numbers precision in bytes (for datafile reading/writing): 4
+Float numbers precision in bytes (for scanner LUT reading/writing): 4
+CASToR version: 3.1.1
+==================================================================================================
+ --- Start conversion of datafile : ../../../calculTOF_outputs/G4Outputs/test0.root
+     CASToR output header datafile: test.Cdh
+     CASToR output binary datafile: test.Cdf
+
+The simulated dataset contained 944 coincidences / bins

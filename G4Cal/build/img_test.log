@@ -1,0 +1,154 @@
+castor-recon() -> Launch reconstruction from CASToR version 3.1.1.
+==================================================================================================
+                                      COMMAND LINE CONTEXT
+==================================================================================================
+Command line: castor-recon -df test_df.Cdh -fout img_test -it 4:28 -dim 256,256,89 -fov 300,300,247.42 -opti MLEM 
+Working directory: /biomaps/physique/apaillet/calculTOF/G4Cal/build
+Data of execution: Thu Jul 21 14:39:32 2022
+Float numbers precision in bytes (for matrices and some computations): 4
+Float numbers precision in bytes (for sensitive computations that require at least double precision): 8
+Float numbers precision in bytes (for datafile reading/writing): 4
+Float numbers precision in bytes (for scanner LUT reading/writing): 4
+CASToR version: 3.1.1
+==================================================================================================
+sScannerManager::Initialize() -> From scanner GE_G4
+oProjectorManager::Initialize() -> Initialize projectors and projection lines
+----- Dynamic model: No parameters given - setting diagonal basis functions !
+oOptimizerManager::Initialize() -> Initialize optimizer and penalty
+oSensitivityGenerator::Launch() -> Start the sensitivity computation
+  --> Time spent for sensitivity generation | User: 324 sec | CPU: 3.2380582e+02 sec
+sChronoManager::Initialize() -> Initialize all duration counters for profiling
+vAlgorithm::IterateCPU() -> Start algorithm for 4 iterations
+vAlgorithm::IterateCPU() -> Start iteration 1/4 subset 1/28
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (52111) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (42224) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (52111) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (52111) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (68272) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (62885) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (68272) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (62885) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (31450) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (68272) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (26063) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (68272) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (31450) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (31450) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (52111) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (62885) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (36837) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (26063) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (62885) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (57498) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (68272) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 2 (62885) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (62885) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iScannerPET::GetPositionsAndOrientations() -> Crystal index 1 (68272) out of range [0:20159] !
+***** vProjector::Project() -> A problem occurred while getting positions and orientations from scanner !
+***** oProjectorManager::ComputeProjectionLine() -> A problem occurred while forward projecting an event !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred while computing the projection line !
+***** iIterativeAlgorithm::StepInnerLoopInsideSubsetLoop() -> A problem occurred inside the parallel loop over events !
+***** vAlgorithm::IterateCPU() -> A problem occurred while calling StepInnerLoopInsideSubsetLoop() function !
+***** castor-recon() -> Error while performing the reconstruction
+***** Exit function called. Abort with code 1.

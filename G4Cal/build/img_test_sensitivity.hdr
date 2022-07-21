@@ -1,0 +1,51 @@
+!INTERFILE := 
+!imaging modality := PET
+!version of keys := CASToRv3.1.1
+CASToR version := 3.1.1
+
+!GENERAL DATA := 
+!originating system := GE_G4
+!data offset in bytes := 0
+!name of data file := img_test_sensitivity.img
+patient name := img_test_sensitivity
+
+!GENERAL IMAGE DATA 
+!type of data := Dynamic
+!total number of images := 89
+imagedata byte order := LITTLEENDIAN
+!number of frame groups :=1 
+process status := 
+
+!STATIC STUDY (General) :=
+number of dimensions := 3
+!matrix size [1] := 256
+!matrix size [2] := 256
+!matrix size [3] := 89
+!number format := short float
+!number of bytes per pixel := 4
+scaling factor (mm/pixel) [1] := 1.171875
+scaling factor (mm/pixel) [2] := 1.171875
+scaling factor (mm/pixel) [3] := 2.78
+first pixel offset (mm) [1] := 0
+first pixel offset (mm) [2] := 0
+first pixel offset (mm) [3] := 0
+data rescale offset := 0
+data rescale slope := 1
+quantification units := 1
+!number of images in this frame group := 89
+!image duration (sec) := 3567587
+!image start time (sec) := 0
+pause between frame groups (sec) := 0
+!END OF INTERFILE := 
+
+!COPY OF INPUT HEADER 1
+Data filename: test_df.Cdf
+Number of events: 944
+Data mode: list-mode
+Data type: PET
+Start time (s): 0
+Duration (s): 1e+09
+Scanner name: GE_G4
+Calibration factor: 1
+Isotope: unknown
+!END OF COPY OF INPUT HEADER 1
